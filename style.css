@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
 }
 .shopping-cart {
+  width: 100%;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -183,7 +184,7 @@ img {
     align-items: flex-start;
     position: relative;
     top: 0;
-    left: 30rem;
+    left: 33rem;
   }
   .product-details {
     display: block;
@@ -229,15 +230,22 @@ img {
     display: inline-block;
     position: relative;
     bottom: -7.2rem;
-    left: -27.6rem;
+    left: -24.6rem;
   }
   .totals {
+    width: 100%;
     background: lightblue;
+  }
+  .totals label {
+    padding-right: 6rem;
+  }
+  .totals .totals-item {
+    margin-right: 1rem;
   }
   .checkout {
     position: relative;
     top: 0.4rem;
-    left: 26rem;
+    left: 27.5rem;
     border: 2px solid green;
     font-size: 25px;
     color: #fff;
@@ -248,6 +256,7 @@ img {
     margin-top: 2rem;
   }
   .button {
+    width: 100%;
     background: lightblue;
   }
 }
