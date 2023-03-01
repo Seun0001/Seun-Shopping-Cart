@@ -4,108 +4,94 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Shopping Cart</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Shopping Cart</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Shopping cart</h1>
-      <div id="Image">image</div>
-      <div id="price">price</div>
-      <div id="quantity">quantity</div>
-      <div id="remove">remove</div>
-      <div id="total">total</div>
-    </header>
-    <div class="underline_0"></div>
-    <div class="Shopping_cart">
-      <!-- Start Of Dog cart -->
-      <div class="Dog_cart">
-        <div class="Dog_cart_image">
+    <h1>Shopping Cart</h1>
+
+    <div class="shopping-cart">
+      <div class="column-labels">
+        <label class="product-image">Image</label>
+        <label class="product-details">Product</label>
+        <label class="product-price">Price</label>
+        <label class="product-quantity">Quantity</label>
+        <label class="product-removal">Remove</label>
+        <label class="product-line-price">Total</label>
+      </div>
+      <div class="underline"></div>
+
+      <div class="product">
+        <div class="product-image">
           <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg" />
         </div>
-        <div class="Dingo_One_Details">
-          <div class="Dingo">dingo dog bones</div>
-          <p class="Dingo_One">
+        <div class="product-details">
+          <div class="product-title">Dingo Dog Bones</div>
+          <p class="product-description">
             The best dog bones of all time. Holy crap. Your dog will be begging
             for these things! I got curious once and ate one myself. I'm a fan.
           </p>
-          <div class="enclosed_div">
-            <div class="Dingo_price">12.99</div>
-            <div class="Dingo_sale_amount">
-              <form>
-                <input type="number" name="amount" value="1" min="1" />
-              </form>
-            </div>
-            <div class="Removal">
-              <button type="reset">remove</button>
-            </div>
-            <div class="Sub_total_price">25.98</div>
-          </div>
         </div>
+        <div class="product-price">12.99</div>
+        <div class="product-quantity">
+          <input type="number" value="2" min="1" />
+        </div>
+        <div class="product-removal">
+          <button class="remove-product">Remove</button>
+        </div>
+        <div class="product-line-price">25.98</div>
       </div>
-      <!-- End Of Dog cart -->
+      <div class="underline1"></div>
 
-      <!-- Underline 1 -->
-      <div class="underline_1"></div>
-
-      <!-- Start Of Nutro_cart -->
-      <div class="Nutro_cart">
-        <div class="Nutro_cart_image">
+      <div class="product">
+        <div class="product-image">
           <img
             src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png"
           />
         </div>
-        <div class="Nutro_One_Details">
-          <div class="Nutro">Nutro™ Adult Lamb and Rice Dog Food</div>
-          <p class="Nutro_One">
+        <div class="product-details">
+          <div class="product-title">Nutro™ Adult Lamb and Rice Dog Food</div>
+          <p class="product-description">
             Who doesn't like lamb and rice? We've all hit the halal cart at 3am
             while quasi-blackout after a night of binge drinking in Manhattan.
             Now it's your dog's turn!
           </p>
-          <div class="enclosed_div">
-            <div class="Nutro_price">45.99</div>
-            <div class="Nutro_sale_amount">
-              <form>
-                <input type="number" name="amount" value="1" min="1" />
-              </form>
-            </div>
-            <div class="Removal">
-              <button type="reset">remove</button>
-            </div>
-            <div class="Sub_total_price">45.99</div>
-          </div>
+        </div>
+        <div class="product-price">45.99</div>
+        <div class="product-quantity">
+          <input type="number" value="1" min="1" />
+        </div>
+        <div class="product-removal">
+          <button class="remove-product">Remove</button>
+        </div>
+        <div class="product-line-price">45.99</div>
+      </div>
+      <div class="underline2"></div>
+
+      <div class="totals">
+        <div class="totals-item">
+          <label>Subtotal</label>
+          <div class="totals-value" id="cart-subtotal">71.97</div>
+        </div>
+        <div class="totals-item">
+          <label class="tax">Tax (5%)</label>
+          <div class="totals-value" id="cart-tax">3.60</div>
+        </div>
+        <div class="totals-item">
+          <label>Shipping</label>
+          <div class="totals-value" id="cart-shipping">15.00</div>
+        </div>
+        <div class="totals-item totals-item-total">
+          <label>Grand Total</label>
+          <div class="totals-value" id="cart-total">90.57</div>
         </div>
       </div>
-      <!-- End Of Nutro_cart -->
 
-      <!-- Underline 2 -->
-      <div class="underline_2"></div>
-
-      <!-- Start Of Total Price -->
-      <div class="Total_price">
-        <div class="Subtotal">
-          <p class="Subtotal_label">subtotal</p>
-          <div class="Subtotal_price_change">71.97</div>
-        </div>
-        <div class="Tax">
-          <p class="Tax_label">tax (5%)</p>
-          <div class="Tax_price_change">3.60</div>
-        </div>
-        <div class="Shipping">
-          <p class="Shipping_label">shipping</p>
-          <div class="Shipping_price_change">15.00</div>
-        </div>
-        <div class="Grand_total">
-          <p class="Grand_total_label">grand total</p>
-          <div class="Grand_total_price_change">90.57</div>
-        </div>
-        <div class="Button">
-          <button type="submit">checkout</button>
-        </div>
+      <div class="button">
+        <button class="checkout" type="button">Checkout</button>
       </div>
-      <!-- End Of Total Price -->
     </div>
-
     <script src="app.js"></script>
   </body>
 </html>

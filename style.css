@@ -3,260 +3,160 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  margin-top: 0.5%;
-  margin-left: 1.5%;
-  overflow-x: hidden;
-}
-.shopping-cart {
-  width: 100%;
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.shopping-cart .product-price,
-.shopping-cart .product-quantity,
-.shopping-cart .product-line-price {
-  color: grey;
-}
-.shopping-cart .underline {
-  border-top: 2px solid lightgrey;
-  margin-bottom: 4%;
-}
-.shopping-cart .underline1 {
-  border-top: 2px solid lightgrey;
-  margin-bottom: 4%;
-  margin-top: 2%;
-}
-.shopping-cart .underline2 {
-  border-top: 2px solid lightgrey;
-  margin-bottom: 4%;
-  margin-top: 4%;
-}
-.column-labels {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: -1.5rem;
-  left: 15rem;
-  padding-left: 8.8rem;
-}
-.column-labels .product-image,
-.column-labels .product-details,
-.column-labels .product-removal {
-  display: none;
-}
-.column-labels .product-price,
-.column-labels .product-quantity {
-  margin-left: 14%;
-}
-.column-labels .product-line-price {
-  margin-left: 18%;
-}
-.product .product-line-price::before {
-  content: "$";
-}
-img {
-  width: 10rem;
-}
-.product {
-  display: flex;
-}
-.product-details {
-  margin-left: 2rem;
-}
-.product-title {
-  width: 20rem;
-  background: whitesmoke;
-  margin-bottom: 1rem;
-}
-
-.product-description {
-  width: 50%;
-  height: 7.5rem;
-}
-.product .product-price {
-  color: darkcyan;
-  margin-right: 9.6rem;
-}
-.product .product-price::before {
-  content: "$";
-}
-.product .product-quantity {
-  color: blue;
-}
-.product-quantity input {
-  width: 2.6rem;
-  margin-right: 4.2rem;
-}
-.product-removal .remove-product {
-  background: brown;
-  border: 2px solid brown;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.3rem;
-  color: white;
-  margin-right: 4.8rem;
-}
-.product .product-line-price {
-  color: darkorange;
-  margin-right: 1.2rem;
-}
-.totals {
-  background: lightgrey;
-}
-.totals-item {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.totals-item label {
-  padding-right: 10.8rem;
-  color: grey;
-}
-.totals-item .tax {
-  margin-right: 0.5rem;
-}
-.totals-item .totals-value {
-  padding-right: 1rem;
-  color: darkgreen;
-}
-.totals-item .totals-value::before {
-  content: "$";
-  color: darkgreen;
-}
-.checkout {
-  position: relative;
-  top: 0rem;
-  left: 72.5rem;
-  border: 2px solid green;
-  font-size: 25px;
-  color: #fff;
-  background: green;
-  padding: 0.5rem 1.5rem;
-  border-radius: 0.3rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-.button {
-  background: lightgrey;
-}
-/* Mobile view side / Client side */
-@media screen and (max-width: 800px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+/* Mobile Or Client Side */
+@media screen and (min-width: 480px) {
   body {
-    margin-top: 0.6rem;
+    padding: 0.4rem;
+    margin-top: 0.4rem;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
   }
-  h1 {
-    font-size: 26px;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .shopping-cart {
-    display: block;
-    position: relative;
+  header h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
+    color: blue;
   }
-  .shopping-cart .column-labels {
+  header div {
+    text-transform: capitalize;
+    font-size: 16px;
     display: none;
   }
-  .shopping-cart .underline,
-  .shopping-cart .underline1 {
-    margin-top: 1rem;
-    border-top: 0.4px solid lightgrey;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .shopping-cart .underline2 {
-    margin-top: 1rem;
-    border-top: 0.4px solid lightgrey;
-  }
-  .product {
-    position: relative;
-  }
-  .product img {
-    width: 6rem;
-  }
-  .product .product-image {
-    display: inline-flex;
-    align-items: flex-start;
-    position: relative;
-    top: 0;
-    left: 33rem;
-  }
-  .product-details {
-    display: block;
+  .underline_0,
+  .underline_1,
+  .underline_2 {
     width: 100%;
-    position: relative;
-    top: 0;
-    right: 8rem;
+    border-bottom: 2px solid lightgrey;
+    margin: 15px 0;
   }
-  .product-description {
+  .Shopping_cart {
     width: 100%;
-    height: 6rem;
+    height: 100%;
   }
-  .product-price {
-    display: block;
-    position: relative;
-    bottom: -10rem;
-    left: -10rem;
+  .Shopping_cart .Dog_cart,
+  .Shopping_cart .Nutro_cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  .shopping-cart .product-price {
-    display: inline-block;
-    position: relative;
-    bottom: -7rem;
-    left: -28rem;
-    margin-top: 0.4rem;
+  .Shopping_cart .Dog_cart .Dog_cart_image,
+  .Shopping_cart .Nutro_cart .Nutro_cart_image {
+    order: 1;
   }
-  .product-price::after {
-    content: "x";
-    margin-left: 2rem;
+
+  .Shopping_cart .Dog_cart .Dog_cart_image img,
+  .Shopping_cart .Nutro_cart .Nutro_cart_image img {
+    width: 10rem;
   }
-  .shopping-cart .product-quantity {
-    display: inline-block;
-    position: relative;
-    bottom: -7.4rem;
-    left: -35rem;
+  .Shopping_cart .Dog_cart .Dingo,
+  .Shopping_cart .Nutro_cart .Nutro {
+    width: 90%;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 1rem;
+    background: whitesmoke;
   }
-  .shopping-cart .product-removal {
-    display: inline-block;
-    position: relative;
-    bottom: -7.2rem;
-    left: -35rem;
+  .Shopping_cart .Dog_cart .Dingo_One,
+  .Shopping_cart .Nutro_cart .Nutro_One {
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.4rem;
   }
-  .shopping-cart .product-line-price {
-    display: inline-block;
-    position: relative;
-    bottom: -7.2rem;
-    left: -24.6rem;
-  }
-  .totals {
+  .Shopping_cart .Dog_cart .Dingo_One_Details,
+  .Shopping_cart .Nutro_cart .Nutro_one_Details {
     width: 100%;
-    background: lightblue;
+    /* order: -1; */
   }
-  .totals label {
-    padding-right: 6rem;
+  .enclosed_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 1.8rem;
   }
-  .totals .totals-item {
-    margin-right: 1rem;
+  .enclosed_div .Dingo_price,
+  .enclosed_div .Nutro_price {
+    color: darkcyan;
   }
-  .checkout {
-    position: relative;
-    top: 0.4rem;
-    left: 27.5rem;
-    border: 2px solid green;
-    font-size: 25px;
-    color: #fff;
-    background: green;
-    padding: 0.5rem 1.5rem;
+  .enclosed_div .Dingo_price::before,
+  .enclosed_div .Nutro_price::before {
+    content: "$";
+  }
+  .enclosed_div .Dingo_sale_amount form input,
+  .enclosed_div .Nutro_sale_amount form input {
+    width: 25%;
+  }
+  .enclosed_div .Removal,
+  .enclosed_div .Removal {
+    margin-left: -8.5rem;
+  }
+  .enclosed_div .Removal button {
+    padding: 3px 5px;
+    text-transform: capitalize;
+    background: brown;
+    color: white;
+    border: 2px solid brown;
     border-radius: 0.3rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
   }
-  .button {
+  .enclosed_div .Sub_total_price {
+    color: green;
+  }
+  .enclosed_div .Sub_total_price::before {
+    content: "$";
+  }
+  .Total_price {
     width: 100%;
     background: lightblue;
+  }
+  .Total_price .Subtotal,
+  .Total_price .Tax,
+  .Total_price .Shipping,
+  .Total_price .Grand_total,
+  .Total_price .Button {
+    display: flex;
+    text-transform: capitalize;
+    margin-left: 50%;
+    justify-content: space-between;
+  }
+  .Total_price .Subtotal_price_change,
+  .Total_price .Tax_price_change,
+  .Total_price .Shipping_price_change,
+  .Total_price .Grand_total_price_change {
+    margin-right: 16%;
+    color: darkgreen;
+  }
+  .Total_price .Subtotal_price_change::before,
+  .Total_price .Tax_price_change::before,
+  .Total_price .Shipping_price_change::before,
+  .Total_price .Grand_total_price_change::before {
+    content: "$";
+  }
+  .Button {
+    width: 100%;
+  }
+  .Button button {
+    background: green;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+    animation: checkout 5s infinite;
+    margin-left: 15%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  @keyframes checkout {
+    50% {
+      box-shadow: 10px 0px 40px blue;
+    }
+    75% {
+      box-shadow: -10px 0px 40px red;
+    }
   }
 }
