@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 /* Mobile Or Client Side */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 720px) {
   body {
     padding: 0.4rem;
     margin-top: 0.4rem;
