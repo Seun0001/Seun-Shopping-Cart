@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Mobile Or Client Side */
+@media screen and (min-width: 480px) {
+  body {
+    padding: 0.4rem;
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 100%;
+  }
+  header h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+  }
+  header div {
+    text-transform: capitalize;
+    font-size: 16px;
+    display: none;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .underline_0,
+  .underline_1,
+  .underline_2 {
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+    margin: 15px 0;
+  }
+  .Shopping_cart {
+    width: 100%;
+    height: 100%;
+  }
+  .Shopping_cart .Dog_cart,
+  .Shopping_cart .Nutro_cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Shopping_cart .Dog_cart .Dog_cart_image,
+  .Shopping_cart .Nutro_cart .Nutro_cart_image {
+    order: 1;
+  }
+
+  .Shopping_cart .Dog_cart .Dog_cart_image img,
+  .Shopping_cart .Nutro_cart .Nutro_cart_image img {
+    width: 10rem;
+  }
+  .Shopping_cart .Dog_cart .Dingo,
+  .Shopping_cart .Nutro_cart .Nutro {
+    width: 90%;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 1rem;
+    background: whitesmoke;
+  }
+  .Shopping_cart .Dog_cart .Dingo_One,
+  .Shopping_cart .Nutro_cart .Nutro_One {
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.4rem;
+  }
+  .Shopping_cart .Dog_cart .Dingo_One_Details,
+  .Shopping_cart .Nutro_cart .Nutro_one_Details {
+    width: 100%;
+    /* order: -1; */
+  }
+  .enclosed_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 1.8rem;
+  }
+  .enclosed_div .Dingo_price,
+  .enclosed_div .Nutro_price {
+    color: darkcyan;
+  }
+  .enclosed_div .Dingo_price::before,
+  .enclosed_div .Nutro_price::before {
+    content: "$";
+  }
+  .enclosed_div .Dingo_sale_amount form input,
+  .enclosed_div .Nutro_sale_amount form input {
+    width: 25%;
+  }
+  .enclosed_div .Removal,
+  .enclosed_div .Removal {
+    margin-left: -8.5rem;
+  }
+  .enclosed_div .Removal button {
+    padding: 3px 5px;
+    text-transform: capitalize;
+    background: brown;
+    color: white;
+    border: 2px solid brown;
+    border-radius: 0.3rem;
+  }
+  .enclosed_div .Sub_total_price {
+    color: green;
+  }
+  .enclosed_div .Sub_total_price::before {
+    content: "$";
+  }
+  .Total_price {
+    width: 100%;
+    background: lightblue;
+  }
+  .Total_price .Subtotal,
+  .Total_price .Tax,
+  .Total_price .Shipping,
+  .Total_price .Grand_total,
+  .Total_price .Button {
+    display: flex;
+    text-transform: capitalize;
+    margin-left: 50%;
+    justify-content: space-between;
+  }
+  .Total_price .Subtotal_price_change,
+  .Total_price .Tax_price_change,
+  .Total_price .Shipping_price_change,
+  .Total_price .Grand_total_price_change {
+    margin-right: 16%;
+    color: darkgreen;
+  }
+  .Total_price .Subtotal_price_change::before,
+  .Total_price .Tax_price_change::before,
+  .Total_price .Shipping_price_change::before,
+  .Total_price .Grand_total_price_change::before {
+    content: "$";
+  }
+  .Button {
+    width: 100%;
+  }
+  .Button button {
+    background: green;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.4rem;
+    animation: checkout 5s infinite;
+    margin-left: 15%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  @keyframes checkout {
+    50% {
+      box-shadow: 10px 0px 40px blue;
+    }
+    75% {
+      box-shadow: -10px 0px 40px red;
+    }
+  }
+}
