@@ -227,4 +227,8 @@
       box-shadow: -10px 0px 5px darkorange;
     }
   }
+  .Shopping_cart .Dog_cart .Dog_cart_image img,
+  .Shopping_cart .Nutro_cart .Nutro_cart_image img {
+    width: 6rem;
+  }
 }
