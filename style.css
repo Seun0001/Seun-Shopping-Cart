@@ -1,10 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 /* Mobile Or Client Side */
 @media screen and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   body {
     padding: 0.4rem;
     margin-top: 0.4rem;
@@ -197,6 +197,11 @@
   }
 }
 @media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   .Button button {
     background: red;
     color: black;
@@ -213,6 +218,11 @@
   }
 }
 @media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   .Button button {
     background: gold;
     color: black;
