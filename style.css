@@ -231,4 +231,43 @@
   .Shopping_cart .Nutro_cart .Nutro_cart_image img {
     width: 6rem;
   }
+  .enclosed_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    margin-top: 1.8rem;
+  }
+  .enclosed_div .Dingo_price,
+  .enclosed_div .Nutro_price {
+    color: darkcyan;
+  }
+  .enclosed_div .Dingo_price::before,
+  .enclosed_div .Nutro_price::before {
+    content: "$";
+  }
+  .enclosed_div .Dingo_sale_amount form input,
+  .enclosed_div .Nutro_sale_amount form input {
+    min-width: 25%;
+  }
+  .enclosed_div .Removal,
+  .enclosed_div .Removal {
+    margin-left: -8.5rem;
+    min-width: 25%;
+  }
+  .enclosed_div .Removal button {
+    padding: 3px 5px;
+    text-transform: capitalize;
+    background: brown;
+    color: white;
+    border: 2px solid brown;
+    border-radius: 0.3rem;
+  }
+  .enclosed_div .Sub_total_price {
+    color: green;
+    min-width: 25%;
+  }
+  .enclosed_div .Sub_total_price::before {
+    content: "$";
+  }
 }
