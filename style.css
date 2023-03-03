@@ -1,11 +1,11 @@
-/* Mobile Or Client Side */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: none;
+}
+
 @media screen and (max-width: 800px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: none;
-  }
   body {
     padding: 0.4rem;
     margin-top: 0.4rem;
@@ -38,25 +38,27 @@
   .Shopping_cart {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
   }
   .Shopping_cart .Dog_cart,
   .Shopping_cart .Nutro_cart {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
   .Shopping_cart .Dog_cart .Dog_cart_image,
   .Shopping_cart .Nutro_cart .Nutro_cart_image {
     order: 1;
+    display: flex;
   }
 
   .Shopping_cart .Dog_cart .Dog_cart_image img,
   .Shopping_cart .Nutro_cart .Nutro_cart_image img {
-    width: 10rem;
+    width: 6rem;
   }
   .Shopping_cart .Dog_cart .Dingo,
   .Shopping_cart .Nutro_cart .Nutro {
-    width: 90%;
+    width: 80%;
     text-transform: capitalize;
     font-size: 16px;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -65,20 +67,19 @@
   }
   .Shopping_cart .Dog_cart .Dingo_One,
   .Shopping_cart .Nutro_cart .Nutro_One {
-    width: 90%;
+    width: 80%;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0.4rem;
   }
   .Shopping_cart .Dog_cart .Dingo_One_Details,
   .Shopping_cart .Nutro_cart .Nutro_one_Details {
     width: 100%;
-    /* order: -1; */
   }
   .enclosed_div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50vw;
+    width: 80%;
     margin-top: 1.8rem;
   }
   .enclosed_div .Dingo_price,
@@ -88,6 +89,12 @@
   .enclosed_div .Dingo_price::before,
   .enclosed_div .Nutro_price::before {
     content: "$";
+  }
+  .enclosed_div .Dingo_sale_amount form::before,
+  .enclosed_div .Nutro_sale_amount form::before {
+    content: "x";
+    position: absolute;
+    left: 12%;
   }
   .enclosed_div .Dingo_sale_amount form input,
   .enclosed_div .Nutro_sale_amount form input {
@@ -104,6 +111,7 @@
     color: white;
     border: 2px solid brown;
     border-radius: 0.3rem;
+    cursor: pointer;
   }
   .enclosed_div .Sub_total_price {
     color: green;
@@ -139,26 +147,8 @@
   .Total_price .Grand_total_price_change::before {
     content: "$";
   }
-  /* .Total_price .Button_checkout {
-    display: flex;
-    justify-content: left;
-    margin-left: 60%;
-  } */
-  /* .Button button {
-    background: green;
-    color: white;
-    padding: 6px 20px;
-    font-size: 28px;
-    margin-right: 10rem;
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  } */
-  .Button {
+  .Total_price .Button {
     width: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
   }
   .Button button {
     background: green;
@@ -167,10 +157,8 @@
     padding: 0.5rem 1.5rem;
     border-radius: 0.4rem;
     animation: checkout 5s infinite;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin: 13%;
+    margin: 6%;
+    cursor: pointer;
   }
   @keyframes checkout {
     50% {
@@ -181,12 +169,14 @@
     }
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 500px) {
   .Button button {
     background: blue;
     color: honeydew;
-    margin: 8%;
     animation: checkout1 5s infinite;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -1rem;
   }
   @keyframes checkout1 {
     50% {
@@ -197,11 +187,10 @@
     }
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .Button button {
     background: red;
     color: black;
-    margin: 8%;
     animation: checkout2 5s infinite;
   }
   @keyframes checkout2 {
@@ -213,17 +202,10 @@
     }
   }
 }
-@media screen and (max-width: 500px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: none;
-  }
+@media screen and (max-width: 400px) {
   .Button button {
     background: gold;
     color: black;
-    margin: 4%;
     animation: checkout3 5s infinite;
   }
   @keyframes checkout3 {
@@ -233,48 +215,5 @@
     75% {
       box-shadow: -10px 0px 5px darkorange;
     }
-  }
-  .Shopping_cart .Dog_cart .Dog_cart_image img,
-  .Shopping_cart .Nutro_cart .Nutro_cart_image img {
-    width: 6rem;
-  }
-  .enclosed_div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50vw;
-    margin-top: 1.8rem;
-  }
-  .enclosed_div .Dingo_price,
-  .enclosed_div .Nutro_price {
-    color: darkcyan;
-  }
-  .enclosed_div .Dingo_price::before,
-  .enclosed_div .Nutro_price::before {
-    content: "$";
-  }
-  .enclosed_div .Dingo_sale_amount form input,
-  .enclosed_div .Nutro_sale_amount form input {
-    min-width: 25%;
-  }
-  .enclosed_div .Removal,
-  .enclosed_div .Removal {
-    margin-left: -8.5rem;
-    min-width: 25%;
-  }
-  .enclosed_div .Removal button {
-    padding: 3px 5px;
-    text-transform: capitalize;
-    background: brown;
-    color: white;
-    border: 2px solid brown;
-    border-radius: 0.3rem;
-  }
-  .enclosed_div .Sub_total_price {
-    color: green;
-    min-width: 25%;
-  }
-  .enclosed_div .Sub_total_price::before {
-    content: "$";
   }
 }
