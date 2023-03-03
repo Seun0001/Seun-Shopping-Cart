@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 /* Mobile Or Client Side */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   body {
     padding: 0.4rem;
     margin-top: 0.4rem;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
   }
   header h1 {
     text-transform: capitalize;
@@ -121,8 +122,9 @@
   .Total_price .Button {
     display: flex;
     text-transform: capitalize;
-    margin-left: 50%;
+    margin-left: 60%;
     justify-content: space-between;
+    color: grey;
   }
   .Total_price .Subtotal_price_change,
   .Total_price .Tax_price_change,
@@ -137,8 +139,26 @@
   .Total_price .Grand_total_price_change::before {
     content: "$";
   }
+  /* .Total_price .Button_checkout {
+    display: flex;
+    justify-content: left;
+    margin-left: 60%;
+  } */
+  /* .Button button {
+    background: green;
+    color: white;
+    padding: 6px 20px;
+    font-size: 28px;
+    margin-right: 10rem;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } */
   .Button {
     width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
   .Button button {
     background: green;
@@ -147,16 +167,65 @@
     padding: 0.5rem 1.5rem;
     border-radius: 0.4rem;
     animation: checkout 5s infinite;
-    margin-left: 15%;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 13%;
   }
   @keyframes checkout {
     50% {
-      box-shadow: 10px 0px 40px blue;
+      box-shadow: 10px 0px 10px blue;
     }
     75% {
-      box-shadow: -10px 0px 40px red;
+      box-shadow: -10px 0px 10px red;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .Button button {
+    background: blue;
+    color: honeydew;
+    margin: 8%;
+    animation: checkout1 5s infinite;
+  }
+  @keyframes checkout1 {
+    50% {
+      box-shadow: 10px 0px 5px saddlebrown;
+    }
+    75% {
+      box-shadow: -10px 0px 5px darkkhaki;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .Button button {
+    background: red;
+    color: black;
+    margin: 8%;
+    animation: checkout2 5s infinite;
+  }
+  @keyframes checkout2 {
+    50% {
+      box-shadow: 10px 0px 5px goldenrod;
+    }
+    75% {
+      box-shadow: -10px 0px 5px darkcyan;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .Button button {
+    background: gold;
+    color: black;
+    margin: 4%;
+    animation: checkout3 5s infinite;
+  }
+  @keyframes checkout3 {
+    50% {
+      box-shadow: 10px 0px 5px salmon;
+    }
+    75% {
+      box-shadow: -10px 0px 5px darkorange;
     }
   }
 }
