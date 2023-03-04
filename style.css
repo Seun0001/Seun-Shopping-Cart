@@ -45,11 +45,13 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    width: 100%;
   }
   .Shopping_cart .Dog_cart .Dog_cart_image,
   .Shopping_cart .Nutro_cart .Nutro_cart_image {
     order: 1;
     display: flex;
+    /* margin-left: -4rem; */
   }
 
   .Shopping_cart .Dog_cart .Dog_cart_image img,
@@ -79,7 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     margin-top: 1.8rem;
   }
   .enclosed_div .Dingo_price,
@@ -94,7 +96,7 @@
   .enclosed_div .Nutro_sale_amount form::before {
     content: "x";
     position: absolute;
-    left: 12%;
+    left: 15%;
   }
   .enclosed_div .Dingo_sale_amount form input,
   .enclosed_div .Nutro_sale_amount form input {
@@ -105,11 +107,12 @@
     margin-left: -8.5rem;
   }
   .enclosed_div .Removal button {
-    padding: 3px 5px;
+    font-size: 12px;
+    padding: 4px 8px;
     text-transform: capitalize;
-    background: brown;
-    color: white;
-    border: 2px solid brown;
+    background: #a44;
+    color: #fff;
+    border: 0;
     border-radius: 0.3rem;
     cursor: pointer;
   }
@@ -150,6 +153,9 @@
   .Total_price .Button {
     width: 100%;
   }
+  .Button {
+    width: 100%;
+  }
   .Button button {
     background: green;
     color: white;
@@ -157,7 +163,9 @@
     padding: 0.5rem 1.5rem;
     border-radius: 0.4rem;
     animation: checkout 5s infinite;
-    margin: 6%;
+    margin-left: 16%;
+    margin-top: 6%;
+    margin-bottom: 6%;
     cursor: pointer;
   }
   @keyframes checkout {
@@ -169,14 +177,19 @@
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 720px) {
+  .Button {
+    width: 100%;
+    height: auto;
+  }
   .Button button {
     background: blue;
     color: honeydew;
     animation: checkout1 5s infinite;
     cursor: pointer;
-    position: absolute;
-    margin-left: -1rem;
+    margin-left: 12%;
+    margin-top: 6%;
+    margin-bottom: 6%;
   }
   @keyframes checkout1 {
     50% {
@@ -187,11 +200,16 @@
     }
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .Button button {
+    display: inline-block;
     background: red;
-    color: black;
+    color: #fff;
     animation: checkout2 5s infinite;
+    cursor: pointer;
+    margin-left: 0.4%;
+    margin-top: 6%;
+    margin-bottom: 6%;
   }
   @keyframes checkout2 {
     50% {
@@ -202,10 +220,10 @@
     }
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .Button button {
     background: gold;
-    color: black;
+    color: #000;
     animation: checkout3 5s infinite;
   }
   @keyframes checkout3 {
@@ -215,5 +233,15 @@
     75% {
       box-shadow: -10px 0px 5px darkorange;
     }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background: blue;
+  }
+  header,
+  div {
+    display: none;
   }
 }
