@@ -161,11 +161,10 @@
     content: "$";
   }
   .Total_price .Button {
-    width: 100%;
-  }
-  .Button {
-    width: 80%;
-    overflow-x: none;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    overflow-x: hidden;
   }
   .Button button {
     background: green;
@@ -174,7 +173,7 @@
     padding: 1% 3%;
     border-radius: 0.4rem;
     animation: checkout 5s infinite;
-    margin-left: 4rem;
+    margin-right: 2rem;
     margin-top: 6%;
     margin-bottom: 6%;
     cursor: pointer;
