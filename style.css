@@ -195,17 +195,11 @@
   }
 }
 /* Desktop View */
-@media screen and (min-width: 651px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: none;
-  }
+@media screen and (min-width: 720px) {
   body {
     padding: 1rem;
     margin-top: 0.4rem;
-    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
   }
   header h1 {
@@ -242,6 +236,7 @@
   }
   .Shopping_cart {
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
   }
   .Shopping_cart .Dog_cart,
   .Shopping_cart .Nutro_cart {
