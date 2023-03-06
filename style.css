@@ -196,6 +196,12 @@
 }
 /* Desktop View */
 @media screen and (min-width: 651px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: none;
+  }
   body {
     padding: 1rem;
     margin-top: 0.4rem;
