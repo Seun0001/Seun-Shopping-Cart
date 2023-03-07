@@ -242,8 +242,6 @@
   .Shopping_cart .Dog_cart,
   .Shopping_cart .Nutro_cart {
     display: flex;
-    width: 100%;
-    overflow-x: hidden;
   }
   img {
     margin: 0 4rem;
@@ -262,12 +260,14 @@
     margin-bottom: 1rem;
     background: whitesmoke;
   }
-  .Shopping_cart .Dog_cart .Dingo_One_Details {
-    max-width: 100%;
+  .Shopping_cart .Dog_cart .Dingo_One_Details,
+  .Shopping_cart .Nutro_cart .Nutro_One_Details {
+    max-width: 50%;
   }
   .Shopping_cart .Dog_cart .Dingo_One,
   .Shopping_cart .Nutro_cart .Nutro_One {
-    width: 26rem;
+    /* width: 26rem; */
+    width: 50%;
   }
   .enclosed_div {
     display: flex;
@@ -275,6 +275,7 @@
     top: -4.5rem;
     left: 23.4rem;
     padding-left: 8.8rem;
+    width: 100%;
   }
   /* Quantity */
   .Dingo_sale_amount,
