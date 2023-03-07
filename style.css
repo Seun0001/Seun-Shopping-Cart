@@ -263,6 +263,7 @@
   .Shopping_cart .Dog_cart .Dingo_One_Details,
   .Shopping_cart .Nutro_cart .Nutro_One_Details {
     max-width: 50%;
+    overflow-x: hidden;
   }
   .Shopping_cart .Dog_cart .Dingo_One,
   .Shopping_cart .Nutro_cart .Nutro_One {
