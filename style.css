@@ -13,6 +13,7 @@
     justify-content: space-between;
   }
   body {
+    background: white;
     padding: 1rem;
     margin-top: 0.4rem;
     width: 100%;
@@ -171,7 +172,7 @@
     background: green;
     color: white;
     font-size: 1.6rem;
-    padding: 1% 3%;
+    padding: 4% 6%;
     border-radius: 0.4rem;
     animation: checkout 5s infinite;
     margin-right: 1.5rem;
@@ -194,6 +195,7 @@
     }
   }
 }
+
 /* Desktop View */
 @media screen and (min-width: 651px) {
   body {
@@ -243,17 +245,17 @@
   .Shopping_cart .Nutro_cart {
     display: flex;
     width: 100%;
-  }
-  img {
-    margin: 0 4rem;
+    overflow-x: hidden;
   }
   /* Shopping images */
   .Shopping_cart .Dog_cart .Dog_cart_image img,
   .Shopping_cart .Nutro_cart .Nutro_cart_image img {
     width: 8rem;
+    margin: 0 4rem;
   }
   .Shopping_cart .Dog_cart .Dingo,
   .Shopping_cart .Nutro_cart .Nutro {
+    display: inline-block;
     width: 40%;
     text-transform: capitalize;
     font-size: 16px;
@@ -263,20 +265,21 @@
   }
   .Shopping_cart .Dog_cart .Dingo_One_Details,
   .Shopping_cart .Nutro_cart .Nutro_One_Details {
-    width: 100%;
+    width: 80%;
   }
   .Shopping_cart .Dog_cart .Dingo_One,
   .Shopping_cart .Nutro_cart .Nutro_One {
-    /* width: 26rem; */
     width: 40%;
   }
   .enclosed_div {
     display: flex;
-    position: relative;
-    top: -4.5rem;
+    align-content: center;
+    /* position: relative; */
+    /* top: -8.5rem;
     left: 23.4rem;
     padding-left: 8.8rem;
-    width: 40%;
+    width: 40%; */
+    margin-top: 1.2rem;
   }
   /* Quantity */
   .Dingo_sale_amount,
