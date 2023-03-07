@@ -236,7 +236,7 @@
   }
   .Shopping_cart {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 100%;
+    width: 100%;
   }
   .Shopping_cart .Dog_cart,
   .Shopping_cart .Nutro_cart {
@@ -258,6 +258,9 @@
     font-family: Georgia, "Times New Roman", Times, serif;
     margin-bottom: 1rem;
     background: whitesmoke;
+  }
+  .Shopping_cart .Dog_cart .Dingo_One_Details {
+    max-width: 100%;
   }
   .Shopping_cart .Dog_cart .Dingo_One,
   .Shopping_cart .Nutro_cart .Nutro_One {
