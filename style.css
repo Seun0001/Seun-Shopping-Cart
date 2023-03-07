@@ -242,6 +242,8 @@
   .Shopping_cart .Dog_cart,
   .Shopping_cart .Nutro_cart {
     display: flex;
+    width: 100%;
+    overflow-x: hidden;
   }
   img {
     margin: 0 4rem;
