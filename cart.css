@@ -272,14 +272,12 @@
     width: 40%;
   }
   .enclosed_div {
+    width: 50%;
     display: flex;
     align-content: center;
-    /* position: relative; */
-    /* top: -8.5rem;
-    left: 23.4rem;
-    padding-left: 8.8rem;
-    width: 40%; */
     margin-top: 1.2rem;
+    top: 0;
+    left: 2rem;
   }
   /* Quantity */
   .Dingo_sale_amount,
