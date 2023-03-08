@@ -175,4 +175,18 @@ button a {
 			background-color: #000;
 		}
 	}
+	.login label{
+	color: #0808f3;
+	transform: scale(.6);
+	}
+
+	#chk:checked ~ .login{
+		transform: translateY(-500px);
+	}
+	#chk:checked ~ .login label{
+		transform: scale(1);	
+	}
+	#chk:checked ~ .signup label{
+		transform: scale(.6);
+	}
 }
