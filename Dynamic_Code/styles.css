@@ -1,13 +1,10 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     padding: 20px;
 }
 header {
@@ -17,13 +14,12 @@ header {
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
+    color: darkturquoise ;
 }
 header div {
     display: none;
 }
-.underline_0,
-.underline_1,
-.underline_2 {
+.underline_0, .underline_1, .underline_2 {
     width: 100%;
     border-bottom: 2px solid lightgrey;
     margin: 20px 0;
@@ -32,13 +28,11 @@ header div {
     width: 100%;
     height: 100%;
 }
-.Dog_cart,
-.Nutro_cart {
+.Dog_cart, .Nutro_cart {
     width: 100%;
     height: 100%;
 }
-.Dog_cart_image,
-.Nutro_cart_image {
+.Dog_cart_image, .Nutro_cart_image {
     order: 1;
     float: right;
     background: red;
@@ -46,29 +40,24 @@ header div {
 img {
     width: 7rem;
 }
-.Dingo_One_Details,
-.Nutro_One_Details {
+.Dingo_One_Details, .Nutro_One_Details {
     width: 100%;
     height: 100%;
     display: block;
 }
 .Dingo_explore,
 .Nutro_explore {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     z-index: 2;
 }
-.Dingo,
-.Nutro {
-    width: 100%;
-    height: 100%;
+.Dingo, .Nutro {
+    width: 100%; height: 100%;
     text-transform: capitalize;
     font-size: 16px;
     margin-bottom: 1rem;
 }
-.Dingo_One,
-.Nutro_One {
-    width: 70%;
+.Dingo_One, .Nutro_One {
+    width: 80%;
 }
 .enclosed_div {
     width: 100%;
@@ -88,13 +77,10 @@ form::before {
     margin-right: 1.4rem;
     margin-left: -0.6rem;
 }
-.Dingo_price,
-.Nutro_price,
-.Sub_total_price {
+.Dingo_price, .Nutro_price, .Sub_total_price {
     color: blue;
 }
-.Dingo_price::before,
-.Nutro_price::before,
+.Dingo_price::before, .Nutro_price::before,
 .Sub_total_price::before {
     content: '$';
 }
@@ -107,3 +93,72 @@ form::before {
     border-radius: 0.3rem;
     cursor: pointer;
 }
+.Total_price {
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+}
+.Subtotal, .Tax, .Shipping, .Grand_total, .Button {
+    width: 50%;
+    height: 100%;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    background: lightcyan;
+    color: grey;
+    margin-left: 50%;
+}
+.Subtotal>div::before, .Tax>div::before,
+.Shipping>div::before, .Grand_total>div::before {
+    content: '$';
+}
+.Total_price p {
+    width: 70%;
+    text-align: right;
+}
+.Sub_total_price {
+    margin-right: 2%;
+}
+.Subtotal_price_change, .Tax_price_change,.Shipping_price_change,
+.Grand_total_price_change {
+    margin-right: 4%;
+}
+
+.Button {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+.Button button {
+    margin-left: 0;
+    text-transform: capitalize;
+    background: green;
+    color: white;
+    font-size: 1.6rem;
+    padding: 2% 10%;
+    border: 0;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-right: 5%;
+    text-align: right;
+    animation: checkout 5s infinite;
+    margin: 4%;
+}
+@keyframes checkout {
+    25% {
+        box-shadow: 10px 0px 10px darkorange;
+    }
+    50% {
+        box-shadow: 10px 0px 10px blue;
+    }
+    75% {
+        box-shadow: -10px 0px 10px red;
+    }
+    100% {
+        box-shadow: 10px 0px 10px saddlebrown;
+    }
+}
+/* Mobile View */
+/* @media screen and (max-width: 500px){
+    
+} */
