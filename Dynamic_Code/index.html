@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Test Shopping Cart</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Shopping cart</h1>
+            <div id="image">image</div>
+            <div id="price">price</div>
+            <div id="quantity">quantity</div>
+            <div id="remove">remove</div>
+            <div id="total">total</div>
+        </header>
+        <div class="underline_0"></div>
+        <div class="Shopping_cart">
+            <!-- Start Of Dog cart -->
+            <div class="Dog_cart">
+                <div class="Dog_cart_image">
+                    <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg" />
+                </div>
+                <div class="Dingo_One_Details">
+                    <div class="Dingo_explore">
+                        <div class="Dingo">dingo dog bones</div>
+                        <p class="Dingo_One">
+                            The best dog bones of all time. Holy crap. Your dog will be begging
+                            for these things! I got curious once and ate one myself. I'm a fan.
+                        </p>
+                    </div>
+                    <div class="enclosed_div">
+                        <div class="Dingo_price">12.99</div>
+                        <div class="Dingo_sale_amount">
+                            <form>
+                                <input type="number" name="amount" value="1" min="1" />
+                            </form>
+                        </div>
+                        <div class="Removal">
+                            <button type="reset">remove</button>
+                        </div>
+                        <div class="Sub_total_price">25.98</div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Of Dog cart -->
+
+            <!-- Underline 1 -->
+            <div class="underline_1"></div>
+
+            <!-- Start Of Nutro_cart -->
+            <div class="Nutro_cart">
+                <div class="Nutro_cart_image">
+                    <img
+                        src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png"
+                    />
+                </div>
+                <div class="Nutro_One_Details">
+                    <div class="Nutro_explore">
+                        <div class="Nutro">
+                            Nutro™ Adult Lamb and Rice Dog Food
+                        </div>
+                        <p class="Nutro_One">
+                            Who doesn't like lamb and rice? We've all hit the halal cart at 3am
+                            while quasi-blackout after a night of binge drinking in Manhattan.
+                            Now it's your dog's turn!
+                        </p>
+                    </div>
+                    <div class="enclosed_div">
+                        <div class="Nutro_price">45.99</div>
+                        <div class="Nutro_sale_amount">
+                            <form>
+                                <input type="number" name="amount" value="1" min="1" />
+                            </form>
+                        </div>
+                        <div class="Removal">
+                            <button type="reset">remove</button>
+                        </div>
+                        <div class="Sub_total_price">45.98</div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Of Nutro_cart -->
+
+            <!-- Underline 2 -->
+            <div class="underline_2"></div>
+
+            <!-- Start Of Total Price -->
+            <div class="Total_price">
+                <div class="Subtotal">
+                    <p class="Subtotal_label">subtotal</p>
+                    <div class="Subtotal_price_change">71.97</div>
+                </div>
+                <div class="Tax">
+                    <p class="Tax_label">tax (5%)</p>
+                    <div class="Tax_price_change">3.60</div>
+                </div>
+                <div class="Shipping">
+                    <p class="Shipping_label">shipping</p>
+                    <div class="Shipping_price_change">15.00</div>
+                </div>
+                <div class="Grand_total">
+                    <p class="Grand_total_label">grand total</p>
+                    <div class="Grand_total_price_change">90.57</div>
+                </div>
+                <div class="Button">
+                    <button type="submit">checkout</button>
+                </div>
+            </div>
+            <!-- End Of Total Price -->
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
