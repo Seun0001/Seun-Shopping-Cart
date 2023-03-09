@@ -208,9 +208,17 @@
   }
 }
 
+
+
+
+
+
+/**************************************************************** 
+ */
 /* Desktop View */
-@media screen and (max-width: 720px) and (orientation: landscape) {
+@media screen and (min-width: 650px) and (max-width: 1500px) and (orientation: landscape) {
   body {
+    background: white;
     padding: 1rem;
     margin-top: 0.4rem;
     width: 100%;
@@ -225,7 +233,7 @@
   }
   header {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
   }
   header div {
@@ -237,6 +245,9 @@
   header #image,
   header #remove {
     display: none;
+  }
+  header #price {
+    margin-right: -1.6%;
   }
   header #quantity {
     margin-right: 15%;
@@ -402,5 +413,72 @@
     100% {
       box-shadow: 10px 0px 10px darkorange;
     }
+  }
+}
+
+/* landscape for my own phone 720px */
+@media screen and (min-width: 800px) and (max-width: 1080px) and (orientation: landscape) {
+  body {
+    background: darkred;
+  }
+}
+
+/***********************************
+****************************
+Space In Between Two Media Queries
+****************************
+ ***********************************/
+
+/* Media queries fpr 720px */
+@media screen and (min-width: 650px) and (max-width: 800px) and (orientation: landscape) {
+  body {
+    width: 100%;
+    height: 100%;
+    background: green;
+  }
+  #price {
+    margin-left: 1%;
+  }
+  .Shopping_cart {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .Shopping_cart img {
+    width: 7.6rem;
+    margin: 0 2rem;
+  }
+  .Shopping_cart .Dog_cart_image,
+  .Shopping_cart .Nutro_cart_image {
+    background: red;
+    width: 25%;
+  }
+  .Dog_cart .Dingo_One_Details,
+  .Nutro_cart .Nutro_One_Details {
+    background: blue;
+    width: 100%;
+  }
+  .Dingo_explore,
+  .Nutro_explore {
+    width: 400px;
+    height: 200px;
+    background: white;
+  }
+  .enclosed_div {
+    width: 500px;
+    background: black;
+    margin-left: -1rem;
+  }
+  /* Text font outlook rearranged */
+  .Dingo_explore .Dingo_One,
+  .Nutro_explore .Nutro_One {
+    width: 60%;
+    font-size: .9rem;
+    margin: .5rem .3rem;
+  }
+  .Dingo_explore .Dingo,
+  .Nutro_explore .Nutro {
+    margin: 0 .1.5rem;
+    font-size: .94rem;
   }
 }
