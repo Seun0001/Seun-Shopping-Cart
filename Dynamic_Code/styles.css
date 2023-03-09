@@ -159,6 +159,8 @@ form::before {
     }
 }
 /* Mobile View */
-/* @media screen and (max-width: 500px){
-    
-} */
+@media screen and (min-width: 520px) and (max-width: 720px) {
+    body {
+        background: red;
+    }
+}
