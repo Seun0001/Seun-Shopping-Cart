@@ -24,6 +24,7 @@ header div {
 .underline_0,
 .underline_1,
 .underline_2 {
+    width: 100%;
     border-bottom: 2px solid lightgrey;
     margin: 20px 0;
 }
@@ -39,9 +40,8 @@ header div {
 .Dog_cart_image,
 .Nutro_cart_image {
     order: 1;
-    width: 20%;
-    height: 40%;
     float: right;
+    background: red;
 }
 img {
     width: 7rem;
@@ -68,7 +68,7 @@ img {
 }
 .Dingo_One,
 .Nutro_One {
-    width: 90%;
+    width: 70%;
 }
 .enclosed_div {
     width: 100%;
