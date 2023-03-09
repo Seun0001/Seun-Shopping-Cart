@@ -83,6 +83,7 @@
   .Shopping_cart .Dog_cart .Dingo_One_Details,
   .Shopping_cart .Nutro_cart .Nutro_one_Details {
     width: 100%;
+    display: block;
   }
   .Shopping_cart .Dingo_One_Details .Dingo_price,
   .Shopping_cart .Nutro_One_Details .Nutro_price,
@@ -92,7 +93,7 @@
   .Shopping_cart .Nutro_One_Details .Removal,
   .Shopping_cart .Dingo_One_Details .Sub_total_price,
   .Shopping_cart .Nutro_One_Details .Sub_total_price {
-    display: inline-flex;
+    display: flex;
     margin-top: 3%;
   }
   /* Applying x sign into the element */
@@ -127,7 +128,7 @@
     font-size: 13px;
     padding: 5px 8px;
     text-transform: capitalize;
-    background: brown;
+    background: #a44;
     color: #fff;
     border: 0;
     border-radius: 0.3rem;
@@ -147,6 +148,18 @@
     margin-left: 50%;
     justify-content: space-between;
     color: grey;
+    background: lightcyan;
+    gap: 4rem;
+  }
+  .Total_price .Subtotal_label,
+  .Total_price .Tax_label,
+  .Total_price .Shipping_label,
+  .Total_price .Grand_total_label {
+    width: 50%;
+    text-align: right;
+  }
+  .Total_price .Tax_label {
+    margin-right: 0.5rem;
   }
   .Total_price .Subtotal_price_change,
   .Total_price .Tax_price_change,
@@ -177,7 +190,7 @@
     animation: checkout 5s infinite;
     margin-right: 1.5rem;
     margin-top: 6%;
-    margin-bottom: 6%;
+    margin-bottom: 3%;
     cursor: pointer;
   }
   @keyframes checkout {
@@ -197,7 +210,7 @@
 }
 
 /* Desktop View */
-@media screen and (min-width: 651px) {
+@media screen and (orientation: landscape) {
   body {
     padding: 1rem;
     margin-top: 0.4rem;
@@ -245,39 +258,43 @@
   .Shopping_cart .Nutro_cart {
     display: flex;
     width: 100%;
-    overflow-x: hidden;
   }
   /* Shopping images */
-  .Shopping_cart .Dog_cart .Dog_cart_image img,
-  .Shopping_cart .Nutro_cart .Nutro_cart_image img {
-    width: 8rem;
+  .Dog_cart_image img,
+  .Nutro_cart_image img {
+    width: 10rem;
     margin: 0 4rem;
   }
-  .Shopping_cart .Dog_cart .Dingo,
-  .Shopping_cart .Nutro_cart .Nutro {
-    display: inline-block;
-    width: 40%;
+  .Dingo_explore .Dingo,
+  .Nutro_explore .Nutro {
+    display: flex;
+    width: 100%;
     text-transform: capitalize;
     font-size: 16px;
     font-family: Georgia, "Times New Roman", Times, serif;
     margin-bottom: 1rem;
     background: whitesmoke;
   }
-  .Shopping_cart .Dog_cart .Dingo_One_Details,
-  .Shopping_cart .Nutro_cart .Nutro_One_Details {
-    width: 80%;
+  .Dingo_explore .Dingo_One,
+  .Nutro_explore .Nutro_One {
+    width: 60%;
   }
-  .Shopping_cart .Dog_cart .Dingo_One,
-  .Shopping_cart .Nutro_cart .Nutro_One {
-    width: 40%;
+  .Dog_cart .Dingo_One_Details,
+  .Nutro_cart .Nutro_One_Details {
+    width: 100%;
+    display: flex;
+  }
+  .Dingo_explore,
+  .Nutro_explore {
+    width: 100%;
+    display: block;
   }
   .enclosed_div {
-    width: 50%;
+    width: 100%;
     display: flex;
-    align-content: center;
-    margin-top: 1.2rem;
-    top: 0;
-    left: 2rem;
+    justify-content: space-between;
+    margin-left: 8%;
+    align-items: baseline;
   }
   /* Quantity */
   .Dingo_sale_amount,
@@ -292,12 +309,14 @@
     margin-left: 8rem;
   }
   .enclosed_div .Removal button {
-    background: brown;
-    padding: 0.2rem 0.5rem;
+    background: #a44;
+    padding: 5px 8px;
     border-radius: 0.3rem;
     color: white;
-    border-color: brown;
+    border: 0;
     text-transform: capitalize;
+    cursor: pointer;
+    /* margin-top: -2px; */
   }
   /* Total price */
   .enclosed_div .Sub_total_price {
@@ -313,5 +332,76 @@
   .enclosed_div .Nutro_price::before,
   .enclosed_div .Sub_total_price::before {
     content: "$";
+  }
+  .Total_price {
+    width: 100%;
+    background: lightblue;
+  }
+  .Total_price .Subtotal,
+  .Total_price .Tax,
+  .Total_price .Shipping,
+  .Total_price .Grand_total,
+  .Total_price .Button {
+    display: flex;
+    text-transform: capitalize;
+    margin-left: 50%;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: grey;
+    background: lightcyan;
+    /* gap: 4rem; */
+  }
+  .Total_price .Subtotal_label,
+  .Total_price .Tax_label,
+  .Total_price .Shipping_label,
+  .Total_price .Grand_total_label {
+    width: 65%;
+    text-align: right;
+  }
+
+  .Total_price .Subtotal_price_change,
+  .Total_price .Tax_price_change,
+  .Total_price .Shipping_price_change,
+  .Total_price .Grand_total_price_change {
+    color: darkgreen;
+  }
+  .Total_price .Subtotal_price_change::before,
+  .Total_price .Tax_price_change::before,
+  .Total_price .Shipping_price_change::before,
+  .Total_price .Grand_total_price_change::before {
+    content: "$";
+  }
+  .Total_price .Button {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    overflow-x: hidden;
+  }
+  .Button button {
+    text-transform: capitalize;
+    background: green;
+    color: white;
+    font-size: 1.6rem;
+    padding: 2% 3%;
+    border-radius: 0.4rem;
+    animation: checkout 5s infinite;
+    margin-right: 0;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    cursor: pointer;
+  }
+  @keyframes checkout {
+    25% {
+      box-shadow: 10px 0px 10px blue;
+    }
+    50% {
+      box-shadow: 10px 0px 10px red;
+    }
+    75% {
+      box-shadow: -10px 0px 10px saddlebrown;
+    }
+    100% {
+      box-shadow: 10px 0px 10px darkorange;
+    }
   }
 }
