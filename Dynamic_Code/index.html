@@ -38,7 +38,7 @@
                         </form>
                     </div>
                     <div class="Removal">
-                        <button type="reset">remove</button>
+                        <button type="reset" id="reset1">remove</button>
                     </div>
                     <div class="Sub_total_price">25.98</div>
                 </div>
@@ -47,7 +47,7 @@
         <!-- End of Dog cart -->
 
         <!-- Underline 1 -->
-        <div class="underline_1"></div>
+        <div class="underline_1" id="reset-1"></div>
 
         <!-- Start of Nutro cart -->
         <div class="Nutro_cart">
@@ -77,7 +77,7 @@
                         </form>
                     </div>
                     <div class="Removal">
-                        <button type="reset">remove</button>
+                        <button type="reset" id="reset2">remove</button>
                     </div>
                     <div class="Sub_total_price">45.99</div>
                 </div>
@@ -86,28 +86,36 @@
         <!-- End of Nutro cart -->
 
         <!-- Underline 2 -->
-        <div class="underline_2"></div>
+        <div class="underline_2" id="reset-2"></div>
 
         <!-- Start of Total Price -->
         <div class="Total_price">
             <div class="Subtotal">
                 <p class="Subtotal_label">subtotal</p>
-                <div class="Subtotal_price_change">71.97</div>
+                <div class="Subtotal_price_change" id="cart-subtotal">71.97</div>
             </div>
             <div class="Tax">
                 <p class="Tax_label">tax (5%)</p>
-                <div class="Tax_price_change">3.60</div>
+                <div class="Tax_price_change" id="cart-tax">3.60</div>
             </div>
             <div class="Shipping">
                 <p class="Shipping_la">shipping</p>
-                <div class="Shipping_price_change">15.00</div>
+                <div class="Shipping_price_change" id="cart-shipping">15.00</div>
             </div>
             <div class="Grand_total">
                 <p class="Grand_total_label">grand total</p>
-                <div class="Grand_total_price_change">90.57</div>
+                <div class="Grand_total_price_change" id="cart-total">90.57</div>
             </div>
             <div class="Button">
-                <button type="submit">checkout</button>
+                <button type="submit" id="checkout-btn">checkout</button>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p><em><b>Your checkout information here :</b></em>
+                    <br><b>Congratulations!!!</b><br>Your finally submitting your request to us.<br>Have a nice time ahead.</p>
+                    <img src="../images/ballon.jpg" alt="congratulation image">
+                </div>
             </div>
         </div>
         <!-- End of Toal Price -->
