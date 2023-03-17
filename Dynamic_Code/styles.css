@@ -21,8 +21,11 @@ header div {
 }
 .underline_0, .underline_1, .underline_2 {
     width: 100%;
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 2px solid lightseagreen;
     margin: 20px 0;
+}
+.underline_0,.underline_2 {
+    border-bottom: 2px solid lightgreen;  
 }
 .Shopping_cart {
     width: 100%;
