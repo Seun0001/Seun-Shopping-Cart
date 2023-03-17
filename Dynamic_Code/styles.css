@@ -191,16 +191,16 @@ form::before {
 }
 @keyframes checkout {
     25% {
-        box-shadow: 10px 0px 10px darkorange;
+        box-shadow: 10px 0px 20px darkorange;
     }
     50% {
-        box-shadow: 10px 0px 10px blue;
+        box-shadow: 10px 0px 20px blue;
     }
     75% {
-        box-shadow: -10px 0px 10px red;
+        box-shadow: 10px 0px 20px red;
     }
     100% {
-        box-shadow: 10px 0px 10px saddlebrown;
+        box-shadow: 10px 0px 20px saddlebrown;
     }
 }
 /* Mobile View Full Landscape */
