@@ -1,3 +1,4 @@
+/* Mobile View */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -202,7 +203,7 @@ form::before {
         box-shadow: 10px 0px 10px saddlebrown;
     }
 }
-/* Mobile View */
+/* Mobile View Full Landscape */
 @media screen and (min-width: 501px) and (max-width: 1080px) {
     .Dog_cart_image, .Nutro_cart_image {
         float: left;
@@ -230,8 +231,33 @@ form::before {
     margin: 5% auto;
     }
 }
-
+/* Full Tablet and Desktop View */
 @media screen and (min-width: 1080px) and (max-width: 1600px) {
+    .modal-content {
+    background-color: #5cf305;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 50%;
+    margin: 5% auto;
+    }
+    .Dog_cart_image, .Nutro_cart_image {
+        float: left;
+        order: -1;
+    }
+    .Total_price {
+        margin-bottom: -1rem;
+    }
+    .Dingo_One_Details, .Nutro_One_Details {
+        display: flex;
+    }
+    .Dog_cart, .Nutro_cart {
+        display: flex;
+        flex-direction: row;
+    }
+    .enclosed_div {
+        align-self: flex-start;
+    }
     .modal-content {
     background-color: #5cf305;
     margin: 15% auto;
