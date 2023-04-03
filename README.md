@@ -1,4 +1,4 @@
-# Shopping Cart {Half Dyaanmic Project}
+# Shopping Cart {Half Dynamic Project}
 
 ## My Main First Frontend Project
 
